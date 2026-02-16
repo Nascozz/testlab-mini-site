@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TestLab — Mini site de démonstration</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="brand">TestLab</div>
+      <nav class="nav">
+        <a href="#features">Fonctions</a>
+        <a href="#about">À propos</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="themeToggle" class="btn ghost" aria-label="Basculer le thème">☾</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Un mini site clair, rapide, prêt à cliquer.</h1>
+        <p class="lead">Démo simple pour tester un déploiement. Tout est en HTML/CSS/JS.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#contact">Tester le contact</a>
+          <a class="btn" href="#features">Voir les blocs</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Fonctions</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Ultra léger</h3>
+            <p>Pas de framework, juste l’essentiel.</p>
+          </div>
+          <div class="card">
+            <h3>Responsive</h3>
+            <p>Nickel sur mobile, tablette, desktop.</p>
+          </div>
+          <div class="card">
+            <h3>Thème clair/sombre</h3>
+            <p>Bouton intégré avec préférence sauvegardée.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section alt">
+      <div class="container">
+        <h2>À propos</h2>
+        <p>TestLab est une page de démo pour vérifier qu’un site peut être publié rapidement et proprement. Idéale pour valider un hébergement.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2>Contact</h2>
+        <form class="contact-form" onsubmit="return false;">
+          <label>
+            Nom
+            <input type="text" placeholder="Ton nom" />
+          </label>
+          <label>
+            Email
+            <input type="email" placeholder="toi@exemple.com" />
+          </label>
+          <label>
+            Message
+            <textarea rows="4" placeholder="Dis-moi ce que tu veux tester"></textarea>
+          </label>
+          <button class="btn primary" type="submit">Envoyer</button>
+        </form>
+        <p class="form-note">Formulaire statique (sans envoi réel).</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year"></span> TestLab. Démo de publication rapide.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
