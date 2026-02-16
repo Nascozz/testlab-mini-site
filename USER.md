@@ -3,9 +3,12 @@
 _Learn about the person you're helping. Update this as you go._
 
 - **Name:**
+  Guillaume
 - **What to call them:**
+  Guillaume
 - **Pronouns:** _(optional)_
 - **Timezone:**
+  Switzerland (CET/CEST)
 - **Notes:**
 
 ## Context
