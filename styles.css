@@ -288,12 +288,35 @@ body {
   align-items: center;
 }
 
+.offer-panel {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--glow);
+}
+
 .checklist {
   list-style: none;
   padding: 0;
   margin: 20px 0 0;
   display: grid;
-  gap: 8px;
+  gap: 10px;
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 26px;
+  color: var(--muted);
+}
+
+.checklist li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #7cffc4;
+  font-weight: 700;
 }
 
 .pricing-grid {
